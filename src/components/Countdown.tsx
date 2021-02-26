@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from 'react';
+import { useContext } from 'react';
 import { CountdownContext } from '../contents/CountdownContext';
 import styles from '../styles/components/Countdown.module.css';
 
@@ -39,6 +39,7 @@ export function Countdown() {
           className={styles.countdownButton}
         >
           Ciclo encerrado
+          <img src="/icons/check-circle.svg" alt="Ciclo encerrado"/>
         </button>
       ) : (
         <>
@@ -49,6 +50,7 @@ export function Countdown() {
               onClick={resetCountdown}
             >
               Abandonar ciclo
+              <img src="/icons/close.svg" alt="Abandonar ciclo"/>
             </button>
             ) : (
               <button 
@@ -57,6 +59,7 @@ export function Countdown() {
                 onClick={startCountdown}
               >
                 Iniciar um ciclo
+                <img src="/icons/play-arrow.svg" alt="Iniciar um ciclo"/>
               </button>
             ) 
           }
