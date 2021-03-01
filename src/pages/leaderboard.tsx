@@ -10,7 +10,7 @@ import styles from '../styles/pages/Leaderboard.module.css';
 // }
 
 // export default function Leaderboard(props: LeaderboardProps) {
-export function Leaderboard() {
+function Leaderboard() {
   <div className={styles.container}>
     <Head>
       <title>Leaderboard | move.it</title>
@@ -22,3 +22,5 @@ export function Leaderboard() {
 // export const getServerSideProps: GetServerSideProps = async(ctx) => {
 //   return 
 // }
+
+export default Leaderboard;
