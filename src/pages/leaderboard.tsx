@@ -10,7 +10,7 @@ import styles from '../styles/pages/Leaderboard.module.css';
 // }
 
 // export default function Leaderboard(props: LeaderboardProps) {
-export default function Leaderboard() {
+export function Leaderboard() {
   <div className={styles.container}>
     <Head>
       <title>Leaderboard | move.it</title>
