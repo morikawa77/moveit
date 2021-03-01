@@ -32,6 +32,15 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Move.it é uma aplicação que mescla a técnica pomodoro, hábitos saudáveis e gamificação 💜
 
+Working in Progress: este projeto está sendo atualizado constantemente pois está sendo adicionado inúmeras novidades:
+
+#TODO - PWA
+#TODO - OAuth (Github, Apple e Google)
+#TODO - Leaderboard - Provavelmente será utilizado mongodb
+#TODO - Twitter Share- Compartilhar imagem no Twitter usando Canvas
+#TODO - Ajustes no CSS - Refinamento de CSS e responsividade
+#TODO - Dark Mode - Criação de tema escuro para a aplicação
+
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.

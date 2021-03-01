@@ -1,0 +1,75 @@
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 35px;
+  line-height: 35px;
+}
+
+.container .switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 34px;
+}
+
+.container label.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.container span.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #eee;
+  border: 1px solid #aaa;
+  border-radius: 34px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.container span.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: 1px;
+  bottom: 1px;
+  background-color: var(--blue);
+  border-radius: 50%;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.container span.slider::after {
+  margin-left: 37px;
+  content: '☀️';
+}
+
+.container input:checked + span.slider {
+  background-color: #999;
+  border: 1px solid #666;
+}
+
+.container input:focus + span.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+.container input:checked + span.slider:before {
+  -webkit-transform: translateX(36px);
+  -ms-transform: translateX(36px);
+  transform: translateX(36px); 
+}
+
+.container input:checked + span.slider:after {
+  position: absolute;
+  content: '🌙';
+  margin-left: 7px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}

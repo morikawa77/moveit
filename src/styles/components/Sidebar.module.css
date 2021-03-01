@@ -1,0 +1,93 @@
+.container {
+  width: 112px;
+  height: 820px;
+  max-height: 100vh;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  background: linear-gradient(180deg, var(--white) 0%, transparent 100%);
+  filter: drop-shadow(0px 0px 60px rgba(0, 0, 0, 0.05));
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.container > img {
+  position: absolute;
+  top: 0;
+  margin: 24px;
+}
+
+.container a {
+  font-size: 0;
+  height: 56px;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  margin-bottom: 15px;
+}
+
+.container a.active::before {
+  content: url('/icons/sidebar-button-active.svg');
+}
+
+.container a.home {
+  display: block;
+  content: ' ';
+  background: url('/icons/home.svg') center center no-repeat;
+  background-size: 32px 32px;
+  height: 56px;
+  width: 100%;
+}
+
+.container a.home:hover {
+  display: block;
+  content: ' ';
+  background: url('/icons/home-active.svg') center center no-repeat;
+  background-size: 32px 32px;
+  height: 56px;
+  width: 100%;
+}
+
+.container a.home.active {
+  display: block;
+  content: ' ';
+  background: url('/icons/home-active.svg') center center no-repeat;
+  background-size: 32px 32px;
+  height: 56px;
+  width: 100%;
+}
+
+.container a.leaderboard {
+  display: block;
+  content: ' ';
+  background: url('/icons/leaderboard.svg') center center no-repeat;
+  background-size: 32px 32px;
+  height: 56px;
+  width: 100%;
+}
+
+.container a.leaderboard:hover {
+  display: block;
+  content: ' ';
+  background: url('/icons/leaderboard-active.svg') center center no-repeat;
+  background-size: 32px 32px;
+  height: 56px;
+  width: 100%;
+}
+
+.container a.leaderboard.active {
+  display: block;
+  content: ' ';
+  background: url('/icons/leaderboard-active.svg') center center no-repeat;
+  background-size: 32px 32px;
+  height: 56px;
+  width: 100%;
+}
+

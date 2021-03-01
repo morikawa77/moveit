@@ -73,10 +73,6 @@
   color: var(--white);
 }
 
-.countdownButtonActive:not(:disabled):hover img {
-  fill: var(--white);
-}
-
 .countdownButton:disabled {
   background: var(--white);
   color: var(--text);
@@ -84,8 +80,28 @@
   border-bottom: 4px solid var(--green);
 }
 
-.countdownButton img {
-  margin-left: 10px;
+.countdownButton:not(:disabled)::after,
+.countdownButtonActive:not(:disabled)::after,
+.countdownButtonActive:not(:disabled)::after,
+.countdownButton:disabled::after {
+  line-height: 0.8rem;
+  padding-left: 15px;
+}
+
+.countdownButton:not(:disabled)::after {
+  content: url('/icons/play-arrow.svg');
+}
+
+.countdownButtonActive:not(:disabled)::after {
+  content: url('/icons/close.svg');
+}
+
+.countdownButtonActive:not(:disabled):hover::after {
+  content: url('/icons/close-over.svg');
+}
+
+.countdownButton:disabled::after {
+  content: url('/icons/check-circle.svg');
 }
 
 
