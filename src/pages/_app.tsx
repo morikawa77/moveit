@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 
-import { Sidebar } from '../components/Sidebar';
 import { ThemeSelectorContext } from '../contents/ThemeSelectorContext';
+import { Sidebar } from '../components/Sidebar';
 import { ThemeSelector } from '../components/ThemeSelector';
 
 import '../styles/global.css';
@@ -13,7 +13,8 @@ function MyApp({ Component, pageProps }) {
   console.log(theme);
 
   return (
-    <div className={theme}>
+    // <div className={theme}>
+    <div className={'light'}>
       <ThemeSelector />
       <Sidebar />
       <Component {...pageProps} />
@@ -22,3 +23,4 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp
+

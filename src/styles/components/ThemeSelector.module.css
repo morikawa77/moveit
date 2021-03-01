@@ -35,7 +35,7 @@
 
 .container span.slider:before {
   position: absolute;
-  content: "";
+  content: " ";
   height: 30px;
   width: 30px;
   left: 1px;

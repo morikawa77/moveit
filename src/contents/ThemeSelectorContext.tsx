@@ -15,10 +15,12 @@ interface ThemeSelectorProviderProps {
 export const ThemeSelectorContext = createContext({} as ThemeSelectorData);
 
 export function ThemeSelectorProvider({ children, ...rest }: ThemeSelectorProviderProps) {
-  const themeFromOS = 'light';
+  let themeFromOS = 'light';
 
   window.matchMedia 
-  && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  && window.matchMedia('(prefers-color-scheme: dark)').matches 
+    ? themeFromOS = 'dark' 
+    : themeFromOS = 'light';
 
   const [theme, setTheme] = useState(rest.theme ?? themeFromOS);
 
